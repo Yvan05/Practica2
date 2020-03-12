@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
-	<html lang="es" ng-app>
+	<html  ng-app>
 	<head>
 								 
 
@@ -10,6 +10,8 @@
 			<link rel="stylesheet" type="text/css" href="css/photoswipe.css"> 
 			<link rel="stylesheet" type="text/css" href="css/default-skin.css"> 
 			<link rel="stylesheet" type="text/css" href="css/micss.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
 
 
 
@@ -18,6 +20,8 @@
 
 				</head>
 					<body>
+ 
+
 						<header class="header">
 							<nav class="navbar navar-light bg-dark text-white ">
 								<i class="fa fa-fw   fa-user-circle fa-4x"></i>
@@ -34,6 +38,23 @@
 				      <a class="nav-a" style="color:#ffffff;" href="https://www.youtube.com/">Youtube</a>
 				    </nav>
 						<br>
+
+ 
+ 
+ 
+<script type="text/javascript">
+	
+var miApp = angular.module('filtrodatos', []);
+ 
+miApp.controller('listas',function($scope){
+ 
+ $scope.frutas = ['Deportes','Musica','Juegos'];
+ 
+});
+ 
+</script>
+
+ 
 						
 						<article >
 							<h3> Mis deportes preferidos </h3>
@@ -203,6 +224,7 @@
 
 
 				</footer>
+				
 
 			<!-- Core JS file -->
 			<script type="text/javascript" src=".js/photoswipe.min.js"></script> 
@@ -211,8 +233,7 @@
 			<script type="text/javascript" src=".js/photoswipe-ui-default.min.js"></script> 
 			<script type="text/javascript" src="./js/all.min.js"></script>
 			<script type="text/javascript" src="./js/script.js"></script>
-			 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-
+			 
 			</body>
 
 
