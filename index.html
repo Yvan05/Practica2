@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
-	<html  ng-app>
+	<html  ng-app="filtrodatos">
 	<head>
 								 
 
@@ -38,7 +38,16 @@
 				      <a class="nav-a" style="color:#ffffff;" href="https://www.youtube.com/">Youtube</a>
 				    </nav>
 						<br>
-
+<input type="text" ng-model="buscarhobbie">
+ 
+<div ng-controller="listas">
+	
+	<ul>
+		<li ng-repeat="hobbie in Hobbies | filter:buscarhobbie">{{hobbie}}</li>
+ 
+	</ul>
+</div>
+ 
  
  
  
@@ -48,7 +57,7 @@ var miApp = angular.module('filtrodatos', []);
  
 miApp.controller('listas',function($scope){
  
- $scope.frutas = ['Deportes','Musica','Juegos'];
+ $scope.Hobbies = ['Deportes','Musica','Juegos'];
  
 });
  
